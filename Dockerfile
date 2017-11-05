@@ -2,7 +2,7 @@
 
 FROM decomp/boca-base
 
-RUN apt-get -y install quota accountsservice --no-install-recommends --allow-unauthenticated
+RUN apt-get -y install quota accountsservice file --no-install-recommends --allow-unauthenticated
 RUN apt-get -y clean
 
 COPY startup.sh /startup.sh
